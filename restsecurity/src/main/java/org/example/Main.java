@@ -6,7 +6,7 @@ import org.example.config.Routes;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationConfig app = ApplicationConfig.getInstance().initiateServer().setExceptionHandling().startServer(7070).setRoutes(Routes.getRoutes());
+        ApplicationConfig app = ApplicationConfig.getInstance().initiateServer().setExceptionHandling().startServer(7070).setRoutes(Routes.getRoutes()).checkSecurityRoles();
 
     }
 }

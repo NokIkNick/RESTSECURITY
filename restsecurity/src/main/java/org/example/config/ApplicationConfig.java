@@ -10,6 +10,9 @@ import io.javalin.http.HttpStatus;
 import io.javalin.plugin.bundled.RouteOverviewPlugin;
 import io.javalin.security.AccessManager;
 import io.javalin.security.RouteRole;
+import org.example.controllers.SecurityController;
+import org.example.dtos.UserDTO;
+import org.example.exceptions.ApiException;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
@@ -77,6 +80,41 @@ public class ApplicationConfig {
         return appConfig;
     }
 
+    public ApplicationConfig checkSecurityRoles() {
+        // Check roles on the user (ctx.attribute("username") and compare with permittedRoles using securityController.authorize()
+        app.updateConfig(config -> {
+
+            config.accessManager((handler, ctx, permittedRoles) -> {
+                // permitted roles are defined in the last arg to routes: get("/", ctx -> ctx.result("Hello World"), Role.ANYONE);
+
+                Set<String> allowedRoles = permittedRoles.stream().map(role -> role.toString().toUpperCase()).collect(Collectors.toSet());
+                if(allowedRoles.contains("ANYONE") || ctx.method().toString().equals("OPTIONS")) {
+                    // Allow requests from anyone and OPTIONS requests (preflight in CORS)
+                    handler.handle(ctx);
+                    return;
+                }
+
+                UserDTO user = ctx.attribute("user");
+                System.out.println("USER IN CHECK_SEC_ROLES: "+user);
+                if(user == null) {
+                    ctx.status(HttpStatus.FORBIDDEN)
+                            .json(jsonMapper.createObjectNode()
+                                    .put("msg", "Not authorized. No username were added from the token"));
+                }
+                if (SecurityController.getInstance(HibernateConfig.getEntityManagerFactoryConfig()).authorize(user, allowedRoles)){
+                    handler.handle(ctx);
+
+                }else{
+                    try {
+                        throw new ApiException(HttpStatus.FORBIDDEN.getCode(), "Unauthorized with roles: "+allowedRoles);
+                    } catch (ApiException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            });
+        });
+        return appConfig;
+    }
 
 
 }

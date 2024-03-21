@@ -1,7 +1,18 @@
 package org.example.exceptions;
 
-public class NotAuthorizedException extends Throwable{
-    public NotAuthorizedException(int code, String msg){
-        super(msg+", "+code);
+import lombok.Getter;
+
+@Getter
+public class NotAuthorizedException extends Exception {
+    private final int statusCode;
+
+    public NotAuthorizedException(int statusCode, String message) {
+        super(message);
+        this.statusCode = statusCode;
     }
+    public NotAuthorizedException(int statusCode, String message, Throwable cause) {
+        super(message, cause);
+        this.statusCode = statusCode;
+    }
+
 }
