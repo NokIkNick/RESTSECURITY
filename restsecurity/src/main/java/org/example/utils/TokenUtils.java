@@ -71,4 +71,22 @@ public class TokenUtils {
         }
     }
 
+
+    //CHECKS IF DEPLOYED
+    public String createToken(UserDTO user) throws ApiException{
+        String ISSUER;
+        String TOKEN_EXPIRE_TIME;
+        String SECRET_KEY;
+
+        if(System.getenv("DEPLOYED") != null){
+            ISSUER = System.getenv("ISSUER");
+            TOKEN_EXPIRE_TIME = System.getenv("TOKEN_EXPIRE_TIME");
+            SECRET_KEY = System.getenv("SECRET_KEY");
+        }else {
+            ISSUER = "Nicklas W.";
+            TOKEN_EXPIRE_TIME = "1800000";
+            SECRET_KEY = "ghjyhtgrfeghjyhtgrfeghjyhtgrfeghjyhtgrfeghjyhtgrfeghjyhtgrfeghjyhtgrfeghjyhtgr";
+        }
+        return createToken(user,ISSUER,TOKEN_EXPIRE_TIME, SECRET_KEY);
+    }
 }

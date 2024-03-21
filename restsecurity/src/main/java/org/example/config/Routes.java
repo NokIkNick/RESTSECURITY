@@ -1,6 +1,7 @@
 package org.example.config;
 
 import io.javalin.apibuilder.EndpointGroup;
+import io.javalin.security.RouteRole;
 import jakarta.persistence.EntityManagerFactory;
 import org.example.controllers.SecurityController;
 
@@ -21,5 +22,10 @@ public class Routes {
         };
     }
 
+    public enum roles implements RouteRole {
+        USER,
+        ADMIN,
+        ANYONE
+    }
 
 }

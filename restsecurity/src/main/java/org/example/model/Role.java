@@ -1,12 +1,10 @@
 package org.example.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -15,12 +13,18 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode
 public class Role {
 
     @Id
     private String name;
 
-    @ManyToMany
+    @ManyToMany()
     List<User> users;
 
+    public void addUser(User user) {
+        if(user != null && !users.contains(user)){
+            users.add(user);
+        }
+    }
 }

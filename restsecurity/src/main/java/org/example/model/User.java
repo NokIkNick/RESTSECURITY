@@ -1,14 +1,10 @@
 package org.example.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 import org.mindrot.jbcrypt.BCrypt;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -18,22 +14,44 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode
 public class User {
     @Id
     private String username;
     private String password;
 
-    @ManyToMany(mappedBy = "users")
-    Set<Role> roles;
+    @JoinTable(name = "user_role", joinColumns = {
+            @JoinColumn(name="user_name", referencedColumnName = "username")},
+            inverseJoinColumns = {
+            @JoinColumn(name = "role_name", referencedColumnName = "name")})
+    @ManyToMany(cascade = CascadeType.DETACH)
+    Set<Role> roles = new HashSet<>();
+
+    @PrePersist
+    private void PrePersist(){
+        this.password = BCrypt.hashpw(password, BCrypt.gensalt());
+    }
 
     public User(String username, String password){
         this.username = username;
-        this.password = BCrypt.hashpw(password, BCrypt.gensalt());
+        this.password = password;
     }
+
 
     public Set<String> getRolesToString(){
         return roles.stream().map(Role::getName).collect(Collectors.toSet());
     }
 
+    public boolean verifyPassword(String password){
+        return BCrypt.checkpw(password, this.password);
+    }
+
+
+    public void addRole(Role role){
+        if(role != null && !roles.contains(role)){
+            roles.add(role);
+            role.addUser(this);
+        }
+    }
 
 }
