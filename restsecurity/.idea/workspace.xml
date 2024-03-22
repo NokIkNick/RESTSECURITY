@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e140786-c7a7-41ff-b576-960fd2302bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/HotelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/HotelDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/IDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/RoomDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/HotelDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/RoomDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24e9943b-ce5d-4ff7-a33b-a812ad46e492.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/24e9943b-ce5d-4ff7-a33b-a812ad46e492.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/Routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/SecurityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/SecurityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/SecurityDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dev.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dev.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -56,62 +40,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "HTTP Request.All in dev.executor": "Run",
-    "HTTP Request.dev | #1.executor": "Run",
-    "HTTP Request.dev | #11.executor": "Run",
-    "HTTP Request.dev | #2.executor": "Run",
-    "HTTP Request.dev | #3.executor": "Run",
-    "HTTP Request.dev | #4.executor": "Run",
-    "HTTP Request.dev | #5.executor": "Run",
-    "HTTP Request.dev | #6.executor": "Run",
-    "HTTP Request.dev | #9.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "HotelSecurity",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in dev.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #10.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #11.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #6.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #7.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #8.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.dev | #9.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;HotelSecurity&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="HTTP Request.dev | #1">
+    <configuration name="dev | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" index="10" requestIdentifier="#10" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="dev | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" index="11" requestIdentifier="#11" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="dev | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" index="3" requestIdentifier="#3" runType="Run single request">
+    <configuration name="dev | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" index="8" requestIdentifier="#8" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="dev | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" index="4" requestIdentifier="#4" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="dev | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" index="5" requestIdentifier="#5" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="dev | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" index="6" requestIdentifier="#6" runType="Run single request">
+    <configuration name="dev | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" index="9" requestIdentifier="#9" runType="Run single request">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.dev | #1" />
+        <item itemvalue="HTTP Request.dev | #10" />
         <item itemvalue="HTTP Request.dev | #11" />
-        <item itemvalue="HTTP Request.dev | #6" />
-        <item itemvalue="HTTP Request.dev | #5" />
-        <item itemvalue="HTTP Request.dev | #4" />
-        <item itemvalue="HTTP Request.dev | #3" />
+        <item itemvalue="HTTP Request.dev | #9" />
+        <item itemvalue="HTTP Request.dev | #8" />
       </list>
     </recent_temporary>
   </component>
@@ -135,6 +122,8 @@
       <workItem from="1710882493062" duration="873000" />
       <workItem from="1710960119038" duration="2849000" />
       <workItem from="1711061396059" duration="4747000" />
+      <workItem from="1711095388471" duration="710000" />
+      <workItem from="1711096163144" duration="291000" />
     </task>
     <servers />
   </component>

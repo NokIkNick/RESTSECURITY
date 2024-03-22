@@ -1,0 +1,3 @@
+{
+  "errorMessage": "org.example.exceptions.ApiException: Unauthorized with roles: [USER], 403"
+}
