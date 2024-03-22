@@ -1,7 +1,9 @@
 package org.example.config;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
+import org.example.model.Hotel;
 import org.example.model.Role;
+import org.example.model.Room;
 import org.example.model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -57,6 +59,8 @@ public class HibernateConfig {
     private static void getAnnotationConfiguration(Configuration configuration) {
         configuration.addAnnotatedClass(User.class);
         configuration.addAnnotatedClass(Role.class);
+        configuration.addAnnotatedClass(Hotel.class);
+        configuration.addAnnotatedClass(Room.class);
 
 
     }

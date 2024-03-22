@@ -1,9 +1,6 @@
 package org.example.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.List;
@@ -19,7 +16,7 @@ public class Role {
     @Id
     private String name;
 
-    @ManyToMany()
+    @ManyToMany(fetch = FetchType.EAGER)
     List<User> users;
 
     public void addUser(User user) {

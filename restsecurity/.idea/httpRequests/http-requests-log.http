@@ -1,0 +1,259 @@
+GET http://localhost:7070/api/protected/admin_demo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc2OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.oIjY4b4YZ-Re0u3vnxy_h1IYz_EL8VljJyODTOXZddE
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-03-22T010844.200.json
+
+###
+
+DELETE http://localhost:7070/api/room/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc2OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.oIjY4b4YZ-Re0u3vnxy_h1IYz_EL8VljJyODTOXZddE
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-03-22T010726.200.json
+
+###
+
+PUT http://localhost:7070/api/room/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc2OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.oIjY4b4YZ-Re0u3vnxy_h1IYz_EL8VljJyODTOXZddE
+Content-Length: 43
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"hotelId":3,
+"number":1234,
+"price":333
+}
+
+<> 2024-03-22T010702.200.json
+
+###
+
+POST http://localhost:7070/api/room
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc2OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.oIjY4b4YZ-Re0u3vnxy_h1IYz_EL8VljJyODTOXZddE
+Content-Length: 46
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"hotelId":15,
+"number":99,
+"price":900000
+
+}
+
+<> 2024-03-22T010639.200.json
+
+###
+
+DELETE http://localhost:7070/api/hotel/10
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc2OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.oIjY4b4YZ-Re0u3vnxy_h1IYz_EL8VljJyODTOXZddE
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-03-22T010620.200.json
+
+###
+
+PUT http://localhost:7070/api/hotel/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc2OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.oIjY4b4YZ-Re0u3vnxy_h1IYz_EL8VljJyODTOXZddE
+Content-Length: 49
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"name":"updatedName",
+"address":"updatedRoad"
+}
+
+<> 2024-03-22T010601.200.json
+
+###
+
+POST http://localhost:7070/api/hotel
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc2OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.oIjY4b4YZ-Re0u3vnxy_h1IYz_EL8VljJyODTOXZddE
+Content-Length: 39
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"name":"test",
+"address":"Coolroad"
+}
+
+<> 2024-03-22T010541.200.json
+
+###
+
+POST http://localhost:7070/api/hotel
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc2OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.oIjY4b4YZ-Re0u3vnxy_h1IYz_EL8VljJyODTOXZddE
+Content-Length: 39
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"name":"test",
+"address":"Coolroad"
+}
+
+<> 2024-03-22T010505.200.json
+
+###
+
+POST http://localhost:7070/api/auth/login
+Content-Length: 48
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username":"Admin",
+"password":"Bigpassword"
+}
+
+<> 2024-03-22T010451.200.json
+
+###
+
+POST http://localhost:7070/api/hotel
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc1NTIsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.xoGaImXswUIo8aCMPvH9sCH71sowxAWowYy4SPWIJW0
+Content-Length: 39
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"name":"test",
+"address":"Coolroad"
+}
+
+<> 2024-03-22T010337.500.json
+
+###
+
+POST http://localhost:7070/api/hotel
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjc1NTIsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6IkFkbWluIn0.xoGaImXswUIo8aCMPvH9sCH71sowxAWowYy4SPWIJW0
+Content-Length: 39
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"name":"test",
+"address":"Coolroad"
+}
+
+<> 2024-03-22T010252.500.json
+
+###
+
+POST http://localhost:7070/api/auth/login
+Content-Length: 48
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username":"Admin",
+"password":"Bigpassword"
+}
+
+<> 2024-03-22T010232.200.json
+
+###
+
+POST http://localhost:7070/api/hotel
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQWRtaW4iLCJleHAiOjE3MTEwNjcwOTcsInJvbGVzIjoiQURNSU4sVVNFUiIsInVzZXJuYW1lIjoiQWRtaW4ifQ.ReHuasT2TTjO2Rk8WAdtqMPkDybPU_p2zBc4hhFB2dM
+Content-Length: 39
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"name":"test",
+"address":"Coolroad"
+}
+
+<> 2024-03-22T005526.500.json
+
+###
+
+POST http://localhost:7070/api/auth/login
+Content-Length: 48
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username":"Admin",
+"password":"Bigpassword"
+}
+
+<> 2024-03-22T005457.200.json
+
+###
+
+POST http://localhost:7070/api/hotel
+Content-Length: 39
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"name":"test",
+"address":"Coolroad"
+}
+
+<> 2024-03-22T002913.500.json
+
+###
+
+GET http://localhost:7070/api/protected/user_demo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOaWNrbGFzIFcuIiwic3ViIjoiQ29vbGd1dG1hbmQiLCJleHAiOjE3MTEwNjQ1MDcsInJvbGVzIjoiVVNFUiIsInVzZXJuYW1lIjoiQ29vbGd1dG1hbmQifQ.RDxPoYfOd-3rfgXBjSw0qw_lEsUrhO4efltpy7WFdsg
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-03-22T001201.200.json
+
+###
+
+POST http://localhost:7070/api/auth/login
+Content-Length: 53
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username":"Coolgutmand",
+"password":"coolkode21"
+}
+
+<> 2024-03-22T001147.200.json
+
+###
+

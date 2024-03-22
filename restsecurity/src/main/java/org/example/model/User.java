@@ -24,7 +24,7 @@ public class User {
             @JoinColumn(name="user_name", referencedColumnName = "username")},
             inverseJoinColumns = {
             @JoinColumn(name = "role_name", referencedColumnName = "name")})
-    @ManyToMany(cascade = CascadeType.DETACH)
+    @ManyToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER)
     Set<Role> roles = new HashSet<>();
 
     @PrePersist

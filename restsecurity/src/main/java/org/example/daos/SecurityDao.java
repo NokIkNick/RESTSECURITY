@@ -36,6 +36,24 @@ public class SecurityDao {
         return user;
     }
 
+    public User createAdminUser(User user){
+        try(var em = emf.createEntityManager()){
+            Role role = em.find(Role.class, "ADMIN");
+            user.addRole(role);
+            em.getTransaction().begin();
+            em.persist(user);
+            em.getTransaction().commit();
+        }
+        return user;
+    }
+
+    public Role getRoleById(String role){
+        Role foundRole;
+        try(var em = emf.createEntityManager()){
+            foundRole = em.find(Role.class, role);
+        }
+        return foundRole;
+    }
 
     public User getVerifiedUser(String username, String password) throws ValidationException {
         try(var em = emf.createEntityManager()){

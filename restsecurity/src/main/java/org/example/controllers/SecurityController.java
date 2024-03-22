@@ -14,6 +14,7 @@ import org.example.dtos.UserDTO;
 import org.example.exceptions.ApiException;
 import org.example.exceptions.NotAuthorizedException;
 import org.example.exceptions.ValidationException;
+import org.example.model.Role;
 import org.example.model.User;
 import org.example.utils.TokenUtils;
 import org.example.utils.Utils;
@@ -138,6 +139,14 @@ public class SecurityController {
             });
         }
         return hasAccess.get();
+    }
+
+    public Role getRoleById(String role){
+        return securityDao.getRoleById(role);
+    }
+
+    public User createAdminUser(User user){
+        return securityDao.createAdminUser(user);
     }
 
 }
